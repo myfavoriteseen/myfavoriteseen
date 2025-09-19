@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+@tailwind base; @tailwind components; @tailwind utilities;
+body{background:linear-gradient(#070608,#0b0c10); color:#e6edf3; font-family:Inter, system-ui, sans-serif}
+.hero{padding:4rem 0}
+.title{font-family:'Cinzel', serif; font-weight:700}
+.scene-card{border-radius:12px; background:#0b0c10;}
+.shop-btn{background:linear-gradient(90deg,#fbbf24,#f59e0b); color:#071018; padding:.5rem .9rem; border-radius:999px}
