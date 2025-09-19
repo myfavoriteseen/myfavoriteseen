@@ -1,0 +1,1 @@
+export default function Footer(){ return (<footer className='py-8'><div className='container flex items-center justify-between'><div><strong>myfavoriteseen</strong><div className='text-sm text-gray-400'>© 2025 • Be Your Favorite Seen</div></div><div className='flex gap-4'><a href='#'>Twitter</a><a href='#'>TikTok</a><a href='#'>Pinterest</a></div></div></footer>) }
