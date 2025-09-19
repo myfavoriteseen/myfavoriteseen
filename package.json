@@ -1,1 +1,21 @@
-{ "name":"myfavoriteseen_masterpiece", "version":"0.1.0", "private":true, "scripts": {"dev":"next dev","build":"next build","start":"next start"}, "dependencies": {"next":"13.4.12","react":"18.2.0","react-dom":"18.2.0","marked":"^4.0.12"}, "devDependencies": {"tailwindcss":"3.3.3","postcss":"8.4.27","autoprefixer":"10.4.14"} }
+{
+  "name": "myfavoriteseen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "marked": "^4.0.12"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.3.3",
+    "postcss": "8.4.27",
+    "autoprefixer": "10.4.14"
+  }
+}

@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
 @tailwind base; @tailwind components; @tailwind utilities;
-body{background:linear-gradient(#070608,#0b0c10); color:#e6edf3; font-family:Inter, system-ui, sans-serif}
-.hero{padding:4rem 0}
-.title{font-family:'Cinzel', serif; font-weight:700}
-.scene-card{border-radius:12px; background:#0b0c10;}
-.shop-btn{background:linear-gradient(90deg,#fbbf24,#f59e0b); color:#071018; padding:.5rem .9rem; border-radius:999px}
+:root{ --neon-blue:#7afcff; --neon-pink:#ff4dd2; --neon-green:#39ff14; --bg:#05050a; }
+html,body,#__next{height:100%}
+body{ @apply bg-gradient-to-b from-[#030305] to-[#070608] text-gray-100 font-body; }
+.neon-hero{ font-family:'Cinzel',serif; font-size:clamp(2.4rem,6vw,4.6rem); color:var(--neon-blue); text-align:center; text-shadow:0 0 8px rgba(122,252,255,0.18),0 0 20px rgba(122,252,255,0.12); animation:neonPulse 3.4s infinite ease-in-out; }
+@keyframes neonPulse{ 0%,100%{ filter:brightness(1);} 50%{ filter:brightness(0.86);} }
+.neon-flicker{ animation:neonFlicker 2s ease-in-out both; }
+@keyframes neonFlicker{ 0%{opacity:0.2;}10%{opacity:1;}30%{opacity:0.6;}60%{opacity:1;}100%{opacity:1;} }
+.neon-subtle{ color:var(--neon-blue); text-shadow:0 0 2px rgba(122,252,255,0.08); transition:text-shadow .25s ease, transform .2s; }
+.neon-subtle:hover{ text-shadow:0 0 10px rgba(122,252,255,0.25),0 0 30px rgba(122,252,255,0.12); transform:translateY(-3px); cursor:pointer; }
+.neon-button{ background:linear-gradient(90deg,var(--neon-blue),var(--neon-pink)); color:#021018; font-weight:700; padding:.6rem 1rem; border-radius:999px; box-shadow:0 10px 30px rgba(122,252,255,0.06); transition:transform .18s,box-shadow .18s; }
+.scene-card{ @apply rounded-2xl overflow-hidden bg-gradient-to-b from-[#071018]/30 to-[#05050a]/20 p-0 shadow-lg; transition:transform .32s,box-shadow .32s; }
+.scene-card:hover{ transform:translateY(-6px) scale(1.01); box-shadow:0 30px 80px rgba(122,252,255,0.04); }
+#particle-canvas{ position:fixed; inset:0; z-index:0; pointer-events:none; mix-blend-mode:screen; opacity:0.32; }
+.cursor-glow{ position:fixed; width:28px; height:28px; border-radius:50%; transform:translate(-50%,-50%); pointer-events:none; z-index:9999; mix-blend-mode:screen; box-shadow:0 0 20px rgba(122,252,255,0.9); }
+.site-container{ position:relative; z-index:10; }
