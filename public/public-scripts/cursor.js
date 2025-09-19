@@ -1,1 +1,0 @@
-(function(){ const c=document.createElement('div'); c.className='cursor-glow'; document.body.appendChild(c); window.addEventListener('mousemove',e=>{ c.style.left=e.clientX+'px'; c.style.top=e.clientY+'px'; }); window.addEventListener('mousedown',()=>{ c.style.width='48px'; c.style.height='48px'; setTimeout(()=>{ c.style.width='28px'; c.style.height='28px'; },120); }); })();
