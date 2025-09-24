@@ -1,0 +1,29 @@
+[
+  {
+    "id": "scene1",
+    "title": "Neon Alley",
+    "category": "Cyberpunk",
+    "blurb": "A bustling neon street alive with synthwave energy.",
+    "image": "/images/scene2.jpg",
+    "video": "/videos/scene2.mp4",
+    "shopLink": "#"
+  },
+  {
+    "id": "scene2",
+    "title": "Synthwave Skyline",
+    "category": "Futuristic",
+    "blurb": "The city pulses with electric rhythm under the skyline.",
+    "image": "/images/scene2.jpg",
+    "video": "/videos/scene2.mp4",
+    "shopLink": "#"
+  },
+  {
+    "id": "scene3",
+    "title": "Retro Terminal",
+    "category": "Tech Noir",
+    "blurb": "An abandoned terminal glowing with retro CRT light.",
+    "image": "/images/scene2.jpg",
+    "video": "/videos/scene2.mp4",
+    "shopLink": "#"
+  }
+]
