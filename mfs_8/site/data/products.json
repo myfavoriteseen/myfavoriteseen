@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "name": "Neon Jacket",
+    "price": 129.0,
+    "image": "/images/product1.jpg",
+    "amazon": "https://www.amazon.com/dp/B08EXAMPLE"
+  },
+  {
+    "id": "p2",
+    "name": "Synth Shades",
+    "price": 49.99,
+    "image": "/images/product2.jpg",
+    "amazon": "https://www.amazon.com/s?k=sunglasses"
+  },
+  {
+    "id": "p3",
+    "name": "Retro Poster",
+    "price": 25.0,
+    "image": "/images/product3.jpg",
+    "amazon": "https://www.amazon.com/s?k=art+poster"
+  }
+]

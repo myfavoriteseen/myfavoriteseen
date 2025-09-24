@@ -1,0 +1,10 @@
+{
+  "name": "studio",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev"
+  },
+  "dependencies": {
+    "sanity": "^3.0.0"
+  }
+}
