@@ -1,0 +1,4 @@
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+export default function PostPage({post}){ if(!post) return <div>Not found</div>; return (<div><Header /><main className='container'><article className='card'><h1 className='text-3xl neon'>{post.title}</h1><p className='text-sm text-white/80 mb-4'>{post.date}</p><div dangerouslySetInnerHTML={{__html:post.content}} /><div className='mt-4'><a href={post.amazon} target='_blank' rel='noopener noreferrer' className='px-4 py-2 bg-neon text-black rounded'>Related Product (Amazon)</a> <a href={post.instagram} target='_blank' rel='noopener noreferrer' className='ml-2 underline'>Instagram</a></div></article></main><Footer /></div>) }
+export async function getServerSideProps({params}){ const p = require('../../data/posts.json').find(x=>x.id===params.id) || null; return { props:{ post: p } } }
